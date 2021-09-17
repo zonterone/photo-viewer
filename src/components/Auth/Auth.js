@@ -18,7 +18,7 @@ function Auth() {
 
   return (
     <Route exact path="/auth">
-      {token ? <Redirect to="/home" /> : null}
+      {token ? <Redirect to="/" /> : null}
     </Route>
   );
 }

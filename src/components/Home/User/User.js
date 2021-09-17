@@ -17,6 +17,7 @@ function User() {
   function handleLogout() {
     localStorage.removeItem("token");
     setIsLogged(false);
+    window.location.reload();
   }
 
   if (isLogged) {
