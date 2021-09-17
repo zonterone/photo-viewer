@@ -3,8 +3,8 @@ import { CLIENT_SECRET, CLIENT_ID } from "./keys";
 const redirectUri = () => {
   if (window.location.hostname === "localhost") {
     return "redirect_uri=http://localhost:3000/auth";
-  } else if (window.location.hostname === "zonterone.github.io") {
-    return "redirect_uri=https://zonterone.github.io/photo-viewer/auth";
+  } else if (window.location.hostname === "photo-viewer-zonter.vercel.app") {
+    return "redirect_uri=https://photo-viewer-zonter.vercel.app/auth";
   }
 };
 
